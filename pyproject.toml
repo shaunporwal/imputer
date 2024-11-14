@@ -9,6 +9,7 @@ authors = [
 requires-python = ">=3.12"
 dependencies = [
     "openai>=1.54.4",
+    "pandas>=2.2.3",
 ]
 
 [build-system]
