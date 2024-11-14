@@ -1,0 +1,11 @@
+ID,Age,Gender,Symptoms,Diagnosis,Treatment
+1,32,Male,"Fever, Cough",Flu,Tamiflu
+2,45,Female,"Chest Pain, Shortness of Breath",Heart Disease,"Aspirin, Lifestyle Change"
+3,29,Male,Fever,Flu,
+4,51,Female,"Headache, Nausea",,Ibuprofen
+5,60,,"Joint Pain, Fatigue",Arthritis,NSAIDs
+6,27,Female,Back Pain,,
+7,34,Male,Sore Throat,Cold,Rest
+8,49,,"Cough, Chest Pain",Heart Disease,Aspirin
+9,38,Female,"Fatigue, Nausea",,NSAIDs
+10,44,Male,"Fever, Headache",Flu,
