@@ -3,18 +3,19 @@ name = "imputer"
 version = "0.1.0"
 description = "Add your description here"
 readme = "README.md"
-requires-python = ">=3.12"
-dependencies = [
-    "openai>=1.54.4",
-    "pandas>=2.2.3",
-]
-
 authors = [
-    {name = "Shaun Porwal", email = "shaun.porwal@gmail.com"}
+    { name = "PorwalS", email = "PorwalS@mskcc.org" }
 ]
+requires-python = ">=3.12"
+dependencies = []
+
+[build-system]
+requires = ["hatchling"]
+build-backend = "hatchling.build"
 
 [dependency-groups]
 dev = [
     "jupyterlab>=4.3.0",
+    "pytest>=8.3.3",
     "ruff>=0.7.3",
 ]
