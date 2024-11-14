@@ -2,6 +2,4 @@
 
 from .imputer import Imputer
 
-
-def hello() -> str:
-    return "Hello from imputer!"
+__all__ = ["Imputer"]
