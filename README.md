@@ -3,10 +3,6 @@ Using LLMs (Large Language Models) to impute values in a dataset.
 
 ## Simulation Data
 Simulation data generated in `notebooks/simdata.ipynb` is located here:
-- `data/sim_medical_data.csv`
-
-### URL to access simdata: 
-
 https://raw.githubusercontent.com/shaunporwal/imputer/main/data/sim_medical_data.csv
 
 ## Maintainer
