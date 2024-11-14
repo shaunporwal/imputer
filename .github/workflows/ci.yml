@@ -1,0 +1,46 @@
+# .github/workflows/ci.yml
+
+name: imputer CI
+
+on:
+  push:
+    branches: [main]
+  pull_request:
+    branches: [main]
+
+jobs:
+  test:
+    name: Test and Lint on Python ${{ matrix.python-version }}
+    runs-on: ubuntu-latest
+
+    strategy:
+      matrix:
+        python-version: ["3.12"]
+
+    steps:
+      # Check out the code
+      - uses: actions/checkout@v4
+
+      # Install `uv` with caching enabled
+      - name: Install uv with caching
+        uses: astral-sh/setup-uv@v3
+        with:
+          version: "0.5.2"      # Pin to a specific version of uv
+          enable-cache: true     # Enable caching for faster runs
+          cache-dependency-glob: "uv.lock"  # Use `uv.lock` to manage cache key
+
+      # Set up Python
+      - name: Set up Python ${{ matrix.python-version }}
+        run: uv python install ${{ matrix.python-version }}
+
+      # Install dependencies (installs all dev dependencies, including ruff)
+      - name: Install dependencies
+        run: uv sync --all-extras --dev
+
+      # Run linting with ruff
+      - name: Run linting with ruff
+        run: uv run ruff check .
+
+      # Run tests
+      - name: Run tests
+        run: uv run pytest tests
