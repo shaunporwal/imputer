@@ -1,11 +1,11 @@
-ID,Age,Gender,Symptoms,Diagnosis,Treatment
-1,32,Male,"Fever, Cough",Flu,Tamiflu
-2,45,Female,"Chest Pain, Shortness of Breath",Heart Disease,"Aspirin, Lifestyle Change"
-3,29,Male,Fever,Flu,
-4,51,Female,"Headache, Nausea",,Ibuprofen
-5,60,,"Joint Pain, Fatigue",Arthritis,NSAIDs
-6,27,Female,Back Pain,,
-7,34,Male,Sore Throat,Cold,Rest
-8,49,,"Cough, Chest Pain",Heart Disease,Aspirin
-9,38,Female,"Fatigue, Nausea",,NSAIDs
-10,44,Male,"Fever, Headache",Flu,
+ID,Age,Gender,Symptoms,Diagnosis,Treatment,MedicalNotes
+1,32,Male,"Fever, Cough",Flu,Tamiflu,Patient reports a high fever and mild cough lasting three days.
+2,45,Female,"Chest Pain, Shortness of Breath",Heart Disease,"Aspirin, Lifestyle Change",Complains of sharp chest pain and difficulty breathing. Family history of heart issues.
+3,29,Male,Fever,Flu,,Mild fever noted. Patient denies other symptoms.
+4,51,Female,"Headache, Nausea",,Ibuprofen,Severe headache with nausea. Suspected migraine.
+5,60,,"Joint Pain, Fatigue",Arthritis,NSAIDs,"Complains of joint pain and fatigue, worsened over the past month."
+6,27,Female,Back Pain,,,Lower back pain aggravated by physical activity. No prior history of injuries.
+7,34,Male,Sore Throat,Cold,Rest,Reports sore throat and mild discomfort. Symptoms began yesterday.
+8,49,,"Cough, Chest Pain",Heart Disease,Aspirin,Chest pain when coughing. History of respiratory issues.
+9,38,Female,"Fatigue, Nausea",,NSAIDs,Fatigue and nausea post flu-like illness. No appetite noted.
+10,44,Male,"Fever, Headache",Flu,,Recurring fever and headaches. Patient seems stressed and tired.
